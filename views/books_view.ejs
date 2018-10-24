@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>LIST OF BOOKS (<%= count %>)</h1>
+    <table border='2' width='600'>
+      <tr>
+      <em><th>Name</th>
+      <th>page</th>
+      <th>copy</th>
+      <th>description</th>
+      <th>price</th></tr></h2>
+      <% for(book of books){ %>
+      <tr>
+        <td>
+       <p> <%= book.name %>
+       </td>
+       <td>
+        <%= book.page %>
+      </td>
+      <td>
+        <%= book.copy %>
+      </td>
+      <td>
+        <%= book.description %>
+      </td>
+      <td>
+        <%= book.price %> </p>
+      </td>
+       <% } %>
+     </tr>
+   </table>
+  </body>
+</html>
